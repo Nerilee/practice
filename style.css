@@ -1,0 +1,635 @@
+    /* --main-color: #796baf 紫色主色;
+    --sub-color: #cdda00 綠色輔色;
+    --sub2-color: #2552a3 藍色輔色;
+    
+    --white-color: #fff 白色;
+    --black-color: #232323 黑色; */
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;;
+    box-sizing: border-box;
+
+}
+
+h1, h2, h3, h4, h5, p{
+    margin: 1rem 0;
+    line-height: 1.6;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.radius, .radius:visited{
+    background-color: #796baf;
+    border-radius: 30px;
+    padding:5px;
+}
+
+.radius:hover{
+    background-color: #a20004;
+    border-radius: 30px;
+    padding:5px;
+}
+
+.aligncenter{
+    text-align: center;
+}
+
+.purple{
+    font-size: 1.75rem;
+    color: #796baf;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5 rem;  
+}
+
+h4{
+    font-size: 1.375rem;
+}
+
+.gray{
+    color: rgb(63, 63, 63);
+}
+
+h6{
+    font-size: 1.125rem;
+}
+
+/* -------------------------------header---------------------------------- */
+header{
+    background: #2c2c2c;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navflex{
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    align-items: center;
+
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+nav a{
+    width: 20%;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover, i:hover{
+    color: rgb(230, 230, 230);
+}
+
+i{
+    color: white;
+    font-size: 2rem;
+    padding: 0 20px ;
+}
+
+.brand{
+    width: 40%;
+    height: 70px;
+    display: flex;
+}
+
+.brand img{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    flex-basis: 400px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty{
+    width: 20%;
+}
+
+section{
+    padding: 50px 0;
+}
+.tiny{
+    font-size: 1.4rem;
+}
+/* herosection----------------------------------------------------------------- */
+
+#herosection{
+    height:60vh;
+    width: 100%;
+    margin-top: 70px;
+    border-top: 20px #ccc solid;
+    background: url(/images/bg-bg.svg) no-repeat;
+    background-size: cover;
+    padding: 128px 0 160px 0;
+}
+
+.flexcol{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+}
+
+#herosection .maintitle{
+    width: 100%;
+    height: 100%;
+}
+
+.snslogan{
+    width: 35%;
+    height: 35%;
+}
+
+/* slogan-----------------------------------------------------------------  */
+
+#slogan{
+    background-color:#cdda00 ;
+    width: 100%;
+    color: #2f2b5c;
+}
+
+#slogan h3 span{
+    font-size: 1.1rem;
+}
+
+/* highlights */
+
+#highlights img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/* audience */
+.flexrow{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    vertical-align: center;
+}
+
+#audience{
+    background-color:#796baf;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#audience h2{
+    padding: 0 0 20px 0;
+}
+.icon{
+    width:60px;
+}
+
+.audiencebox{
+    width: 30%;
+    margin: 0 20px
+}
+
+
+/* highlight-------------------------------------------------------- */
+
+#highlight img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+/* agenda------------------------------------------------------------------ */
+
+#agenda{
+    background-color: #eee;
+}
+
+.classlist{
+    width: 60%;
+}
+
+
+#agenda img{
+    width: 450px;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right,#796baf , rgba(255, 255, 255, 0));
+    padding: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.h4 li{
+    list-style-type: disc;
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 600;
+    list-style-position: inside;
+}
+
+.h6 li{
+    list-style-type: circle;
+    font-size:1.125rem ;
+    color: #796baf;
+    line-height: 30px;
+    font-weight: 500;
+    line-height: 2;
+    
+}
+
+.h5{
+    margin:1rem;
+}
+
+.speaker-style{
+    width: 40%;
+    padding: 120px 50px 0 50px;
+
+}
+
+.speaker-info {
+    text-align: right;
+    position: relative;
+    top: -80px;
+}
+
+.speaker-style2{
+    width: 40%;
+    padding: 120px 50px 0 50px;
+    order:-1;
+}
+
+.speaker-info h2{
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.speaker-info h2, .speaker-info h6{
+    background-color: #796baf ;
+    color: aliceblue;
+    display: inline-block;
+    margin: 4px 0 ;
+}
+
+.display2{
+    font-size: 32px;
+}
+
+.speaker-info2 {
+    text-align: left;
+    position: relative;
+    top: -60px;
+}
+
+.btn{
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 4px 0;
+    padding: 5px;
+}
+
+/* worried------------------------------------------------------ */
+#worried {
+    font-weight: 500;
+    font-size: 22px;
+    color: rgb(58, 58, 58);
+}
+.article-geous3{
+    text-align: right;
+}
+
+.worrypic{
+    width: 60px;
+    float: right;
+    margin: 0 20px;
+}
+
+.question{
+    border: 1px #6b83af solid;
+    display: inline-block;
+    padding: 10px 200px 10px 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Q{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.qspeaker{
+    width: 25%;
+    float: left;
+    padding: 35px;
+}
+
+.worries-ans{
+    float: right;
+    width: 65%;
+    padding: 30px 0;
+    list-style-type:armenian;
+}
+
+.display3{
+    font-size: 20px;
+    color: #000;
+}
+
+.question2{
+    padding-right:200px;
+}
+
+.qh4 li{
+    list-style-type: none;
+
+    margin: 10px 0;
+    font-size: 1.15rem;
+    Text-indent:-40px;
+}
+
+.qh6 li{
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left:30px;
+    text-indent: -60px;    
+}
+
+.q-radius{
+    clear: both;
+    border: 2px #8ea5d1 solid;
+    border-radius: 20px;
+    background-color: transparent;
+    display: block;
+    padding: 5px;
+    margin: 5px auto;
+    width: 500px;
+    text-align: center;
+}
+
+h5.radius1{
+    width: 800px;
+
+}
+
+#slide-carosel img{
+    width: 24.8%;
+    padding: 0;
+    margin: 30px 0;
+}
+
+
+/* photos------------------------------------------------------- */
+#photos{
+    font-size: 0;
+    letter-spacing: 0;
+    margin: 50px 0;
+    padding: 0;
+
+}#photos img{
+    font-size: 0;
+    letter-spacing: 0;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* information ------------------------------------------------------- */
+#information{
+    background-color: #606060;
+    color: #fff;
+}
+
+.ganeralinfo{
+    width: 50%;
+}
+
+
+.mail, .mail:visited{
+    color: #cdda00;
+    text-decoration: none;
+}
+
+.mail:hover{
+    color: #17a2b8;}
+
+.ganeralinfo h6 p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.ganeralinfo h3{
+margin: 0;
+}
+/* ticket */
+.ticket{
+    width: 50%;
+}
+
+table{
+    margin: 0 0 80px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+tr {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+th{
+    border-bottom: 2px solid rgb(85, 85, 85);
+    vertical-align: middle;
+}
+td{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    padding: 30px 10px 30px 10px;
+}
+tr th:nth-child(1), tr td:nth-child(1) {
+    background-color: #cdda00;
+}
+
+tr th:nth-child(2), tr td:nth-child(2) {
+    background-color: #e0e699;
+}
+
+.ticketnote{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pricenote{
+    font-size: 20px;
+}
+
+#information .radius{
+    clear: both;
+    width: 200px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 700;
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* article----------------------------------------------------- */
+.article1{
+    display: inline-block;
+    width: 380px;
+    margin: 20px 10px;
+}
+
+.articlepic{
+    width: 380px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px rgb(192, 192, 192);
+    transition: .5s;
+
+}
+
+.articlepic:hover{
+opacity: 0.5;
+}
+
+.s11img{
+    position: relative;
+    top:-30px;
+    left:0px;
+    width: 400px;
+}
+
+.article1 h6{
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #606060;
+    text-align: left;
+}
+
+.article1 a, .article1 a:visited{
+    color: #000;
+    text-decoration: none;
+
+}
+/* biz-online*/
+
+#biz-online img{
+    width: 100%;
+
+}
+/* qna-------------------------------------------------------- */
+
+#qna ul{
+    list-style: none;
+    padding:0;
+}
+
+#qna a,#qna a:visited{
+    text-decoration: none;
+    color: #796baf;
+}
+
+#qna a:hover{
+    color: #17a2b8;
+}
+/* groupclass------------------------------------------------------------------ */
+#groupclass img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* #footer----------------------------------------------------- */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0 ;
+}
+
+footer li{
+    display: inline-block;
+}
+footer a, footer a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mediag{
+    font-size: 22px;
+    font-weight: 600;
+    }
+
+footer p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* top------------------------------------------------------------------------------ */
+.top{
+    background-color: #796baf;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.top:hover{
+    background-color: #645791;
+}
+
+.top img{
+    width: 20px;
+    text-align: center;
+    padding: 20px 0px 0px 5px;
+}
